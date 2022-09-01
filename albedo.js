@@ -170,21 +170,21 @@ const levelRole = getLevelingLevel(m.sender)
 	if (isAntiLink) 
 if (budy.includes('https://chat.whatsapp.com/')) {
                if (!m.key.fromMe) {
-               reply('*LINK DETECTED*\nWow, how naughty, this group has been installed with Antilink, OK?..,\nGood Bye To You..👋🏻')
+               reply('*LINK DETECTED*\nWah nakal sekali, grup ini sudah terpasang Antilink, oke?..,\nSelamat tinggal untukmu..👋🏻')
                let sianj = m.sender
                await NexusNwInc.groupParticipantsUpdate(m.chat, [sianj], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                }
 	  }
 	if (db.chats[m.chat].wame) {
         if (budy.match(`wa.me/`)) {
-        m.reply(`「 WA.ME DETECTED 」\n\nYou have been detected sending a wa.me link, sorry you will be kicked !`)
-          if (!isBotAdmins) return m.reply(`Bot must be admin first`)
+        m.reply(`「 WA.ME DETECTED 」\n\nAnda telah terdeteksi mengirim tautan wa.me, maaf Anda akan ditendang !`)
+          if (!isBotAdmins) return m.reply(`Bot harus admin dulu`)
         let gclink = (`https://wa.me/`)
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return m.reply(`Eh sorry it didn't happen, because you sent this wa.me link`)
-        if (isAdmins) return m.reply(`Ehh sorry you admin`)
-        if (isCreator) return m.reply(`Ehh sorry you are the owner of me`)
+        if (isgclink) return m.reply(`Eh maaf nggak jadi, soalnya kamu kirim link wa.me ini`)
+        if (isAdmins) return m.reply(`Eh maaf ya admin`)
+        if (isCreator) return m.reply(`Ehh maaf kamu pemilik aku`)
         NexusNwInc.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
