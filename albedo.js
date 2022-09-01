@@ -2496,8 +2496,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedContentText: anu,
                             locationMessage: {
                             jpegThumbnail: fs.readFileSync('./Media/astapic.jpg')},
-                            hydratedFooterText: `Ohayo🤚 ${pushname}
-How Are You? 😊
+                            hydratedFooterText: `Hallo Kak ${pushname}
+Apa kabar? 
 
 
 ❏「 INFO BOT 」
@@ -2511,31 +2511,31 @@ How Are You? 😊
 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 
 
-Please Select Button Below
+Silakan Pilih Tombol Di Bawah
 `,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Website',
-                                    url: 'https://lynk.id/kri.com'
+                                    displayText: 'My YouTube',
+                                    url: 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg'
                                 }
                             }, {
                             	urlButton: {
-                                displayText: 'Script🔖',
-                                    url: 'https://github.com/krizynofc'
+                                displayText: 'Group Bot',
+                                    url: 'https://chat.whatsapp.com/ItwCvXL02hg11U5qNaLSBe'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🍇All Menu🍇',
+                                    displayText: 'All Menu',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '🍒List Menu🍒',
+                                    displayText: 'List Menu',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'Owner',
                                     id: `${prefix}owner`
                                 }
                             }]
